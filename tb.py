@@ -195,15 +195,15 @@ def login():
 ##### CRACK LANGSUNG ###
 def crfile()
 	os.system('clear')
-		print logo
-		try:
-			idlist = raw_input('\x1b[1;91m[+] \x1b[1;92mFile Name  \x1b[1;91m: \x1b[1;97m')
-			for line in open(idlist,'r').readlines():
-				id.append(line.strip())
-		except IOError:
-			print '\x1b[1;91m[!] File not found'
-			raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
-			masuk()
+	print logo
+	try:
+		idlist = raw_input('\x1b[1;91m[+] \x1b[1;92mFile Name  \x1b[1;91m: \x1b[1;97m')
+		for line in open(idlist,'r').readlines():
+			id.append(line.strip())
+	except IOError:
+		print '\x1b[1;91m[!] File not found'
+		raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+		masuk()
 ##### TOKEN #####
 def tokenz():
 	os.system('reset')
