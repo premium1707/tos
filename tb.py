@@ -205,6 +205,14 @@ def crfile():
 		raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
 		masuk()
 	
+	print "\033[1;91m[+] \033[1;92mTotal ID \033[1;91m: \033[1;97m"+str(len(id))
+	jalan('\033[1;91m[✺] \033[1;92mStart \033[1;97m...')
+	titik = ['.   ','..  ','... ']
+	for o in titik:
+		print("\r\033[1;91m[\033[1;96m✸\033[1;91m] \033[1;92mCrack \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
+	print
+	print 42*"\033[1;97m═"
+	
 	##### crack #####
 	def main(arg):
 		global cekpoint,oks
