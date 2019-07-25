@@ -113,7 +113,7 @@ def masuk():
 	print "\033[1;97m║--\033[1;91m> \033[1;92m1.\033[1;97m Login"
 	print "\033[1;97m║--\033[1;91m> \033[1;92m2.\033[1;97m Login using token"
 	print "\033[1;97m║--\033[1;91m> \033[1;92m3.\033[1;97m Clear Token and Login"
-	print "\033[1;97m║--\033[1;91m> \033[1;92m4.\033[1;97m Account Checker"
+	print "\033[1;97m║--\033[1;91m> \033[1;92m4.\033[1;97m Account Checker ( No Login )"
 	print "\033[1;97m║--\033[1;91m> \033[1;91m0.\033[1;97m Exit"
 	print "\033[1;97m║"
 	msuk = raw_input("\033[1;97m╚═\033[1;91mD \033[1;97m")
@@ -218,17 +218,17 @@ def cek():
 		mpsh = json.loads(data.text)
 		if 'access_token' in mpsh:
 			live.append(password)
-			print"\033[1;97m[ \033[1;92mLive\033[1;97m ] \033[1;97m"+username+"|"+password
+			print"\033[1;97m[ \033[1;92mOK✓\033[1;97m ] \033[1;97m"+username+"|"+password
 		elif 'www.facebook.com' in mpsh["error_msg"]:
 			cek.append(password)
-			print"\033[1;97m[ \033[1;93mCheck\033[1;97m ] \033[1;97m"+username+"|"+password
+			print"\033[1;97m[ \033[1;93mCP✚\033[1;97m ] \033[1;97m"+username+"|"+password
 		else:
 			die.append(password)
 			print"\033[1;97m[ \033[1;91mDie\033[1;97m ] \033[1;97m"+username+"|"+password
 	print 42*"\033[1;97m═"
-	print"\033[1;91m[+] \033[1;92mTotal\033[1;91m : \033[1;97mLive=\033[1;92m"+str(len(live))+" \033[1;97mCheck=\033[1;93m"+str(len(cek))+" \033[1;97mDie=\033[1;91m"+str(len(die))
+	print"\033[1;91m[+] \033[1;92mTotal\033[1;91m : \033[1;97mOK=\033[1;92m"+str(len(live))+" \033[1;97mCP=\033[1;93m"+str(len(cek))+" \033[1;97mDie=\033[1;91m"+str(len(die))
 	raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
-	lain()
+	masuk()
 	
 ##### TOKEN #####
 def tokenz():
@@ -2472,15 +2472,15 @@ def check_akun():
 		mpsh = json.loads(data.text)
 		if 'access_token' in mpsh:
 			live.append(password)
-			print"\033[1;97m[ \033[1;92mLive\033[1;97m ] \033[1;97m"+username+"|"+password
+			print"\033[1;97m[ \033[1;92mOK✓\033[1;97m ] \033[1;97m"+username+"|"+password
 		elif 'www.facebook.com' in mpsh["error_msg"]:
 			cek.append(password)
-			print"\033[1;97m[ \033[1;93mCheck\033[1;97m ] \033[1;97m"+username+"|"+password
+			print"\033[1;97m[ \033[1;93mCP✚\033[1;97m ] \033[1;97m"+username+"|"+password
 		else:
 			die.append(password)
 			print"\033[1;97m[ \033[1;91mDie\033[1;97m ] \033[1;97m"+username+"|"+password
 	print 42*"\033[1;97m═"
-	print"\033[1;91m[+] \033[1;92mTotal\033[1;91m : \033[1;97mLive=\033[1;92m"+str(len(live))+" \033[1;97mCheck=\033[1;93m"+str(len(cek))+" \033[1;97mDie=\033[1;91m"+str(len(die))
+	print"\033[1;91m[+] \033[1;92mTotal\033[1;91m : \033[1;97mOK=\033[1;92m"+str(len(live))+" \033[1;97mCP=\033[1;93m"+str(len(cek))+" \033[1;97mDie=\033[1;91m"+str(len(die))
 	raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
 	lain()
 	
