@@ -128,7 +128,6 @@ def masuk():
 		os.system('rm -rf login.txt')
 		login()
 	elif msuk == '4':
-		os.system('clear')
 		crfile()
 	elif msuk =="0":
 		keluar()
