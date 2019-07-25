@@ -193,7 +193,7 @@ def login():
 			login()
 
 ##### CRACK LANGSUNG ###
-def crfile()
+def crfile():
 	os.system('clear')
 	print logo
 	try:
