@@ -144,7 +144,7 @@ def login():
 		print logo
 		print('\033[1;91m[☆] \033[1;92mLOGIN AKUN FACEBOOK \033[1;91m[☆]')
 		id = raw_input('\033[1;91m[+] \033[1;36mID\033[1;97m|\033[1;96mEmail\033[1;97m \033[1;91m:\033[1;92m ')
-		pwd = cout << "*"('\033[1;91m[+] \033[1;36mPassword \033[1;91m:\033[1;92m ')
+		pwd = passw('\033[1;91m[+] \033[1;36mPassword \033[1;91m:\033[1;92m ')
 		tik()
 		try:
 			br.open('https://m.facebook.com')
