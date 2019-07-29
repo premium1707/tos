@@ -207,7 +207,7 @@ def cek():
 	except IOError:
 		print ("\033[1;91m[!] File not found")
 		raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
-		lain()
+		masuk()
 	pemisah = raw_input("\033[1;91m[+] \033[1;92mPemisah \033[1;91m:\033[1;97m ")
 	jalan('\033[1;91m[✺] \033[1;92mStart \033[1;97m...')
 	print 42*"\033[1;97m═"
