@@ -254,8 +254,7 @@ for o in titik:
 	print("\r\033[1;91m[\033[1;96m✸\033[1;91m] \033[1;92mCrack \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 print
 print 42*"\033[1;97m═"
-
-	def main(arg):
+def main(arg):
 		global cekpoint,oks
 		user = arg
 		try:
