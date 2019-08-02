@@ -381,7 +381,7 @@ def gas(gea):
 		pass
 	
 p = ThreadPool(30)
-p.map(main, id)
+p.map(gas, id)
 print 42*"\033[1;97m═"
 print '\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mDone \033[1;97m....'
 print"\033[1;91m[+] \033[1;92mTotal OK/CP \033[1;91m: \033[1;92m"+str(len(oke))+"\033[1;97m/\033[1;93m"+str(len(cekp))
