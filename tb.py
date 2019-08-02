@@ -235,7 +235,7 @@ def cek():
 	masuk()
 
 ## FILE NAME ##
-def cfile()
+def cfile():
 	os.system('clear')
 	print logo
 	try:
