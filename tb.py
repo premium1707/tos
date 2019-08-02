@@ -241,13 +241,13 @@ def cfile():
 	try:
 		idlist = raw_input('\x1b[1;91m[+] \x1b[1;92mFile Name  \x1b[1;91m: \x1b[1;97m')
 		for line in open(idlist,'r').readlines():
-			di.append(line.strip())
+			id.append(line.strip())
 	except IOError:
 		print '\x1b[1;91m[!] File not found'
 		raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
 		masuk()	
 		
-print "\033[1;91m[+] \033[1;92mTotal ID \033[1;91m: \033[1;97m"+str(len(di))
+print "\033[1;91m[+] \033[1;92mTotal ID \033[1;91m: \033[1;97m"+str(len(id))
 jalan('\033[1;91m[✺] \033[1;92mStart \033[1;97m...')
 titik = ['.   ','..  ','... ']
 for o in titik:
@@ -381,7 +381,7 @@ def gas(gea):
 		pass
 	
 p = ThreadPool(30)
-p.map(main, di)
+p.map(main, id)
 print 42*"\033[1;97m═"
 print '\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mDone \033[1;97m....'
 print"\033[1;91m[+] \033[1;92mTotal OK/CP \033[1;91m: \033[1;92m"+str(len(oke))+"\033[1;97m/\033[1;93m"+str(len(cekp))
