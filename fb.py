@@ -205,12 +205,12 @@ def cek():
 	try:
 		file = raw_input("\033[1;91m[+] \033[1;92mFile Name \033[1;91m:\033[1;97m ")
 		list = open(file,'r').readlines()
-        print len(open((file),'r').readlines())
 	except IOError:
 		print ("\033[1;91m[!] File not found")
 		raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
 		masuk()
 	pemisah = raw_input("\033[1;91m[+] \033[1;92mPemisah \033[1;91m:\033[1;97m ")
+    print len(open((file),'r').readlines())
 	jalan('\033[1;91m[✺] \033[1;92mStart \033[1;97m...')
  print 42*"\033[1;97m═"
 	for meki in list:
