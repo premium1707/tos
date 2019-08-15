@@ -210,7 +210,7 @@ def cek():
 		raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
 		masuk()
 	pemisah = raw_input("\033[1;91m[+] \033[1;92mPemisah \033[1;91m:\033[1;97m ")
-    print "\033[1;91m[+] \033[1;92mTotal FB \033[1;91m: \033[1;97m"+len(open((file),'r').readlines())
+    print "\033[1;91m[+] \033[1;92mTotal FB \033[1;91m: \033[1;97m"+str(open((file),'r').readlines())
 	jalan('\033[1;91m[✺] \033[1;92mStart \033[1;97m...')
  print 42*"\033[1;97m═"
 	for meki in list:
